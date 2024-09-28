@@ -2,14 +2,16 @@
 PDF Table of Contents Generator
 ===============================
 
+Ever had a large PDF document that you want to read, but there is no table of contents in the reader? This might be your lucky day!
 This Python module allows you to generate a table of contents (TOC) for a PDF file based on a formatted text file. The TOC can have hierarchical levels such as top-level, sublevel, and sub-sublevel items.
 
-Keywords: "Generate outline pdf"
+Keywords: Generate outline pdf, generate pdf outline, generate table of contents pdf, table of contents pdf
 
 Overview
 --------
 
 The module reads a PDF file and a text file with titles and page numbers, then writes a new PDF file with an outline (TOC) that matches the structure of the text file.
+Great for large documents with many pages. Copy-pasting the content page of some PDF to a .txt file should do the trick without much user intervention.
 
 Functions
 ---------
