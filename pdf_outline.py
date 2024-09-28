@@ -11,11 +11,16 @@ def isName(line: str) -> bool:
         ret = False
     return ret
 
-def matchPattern(line: str, pattern: str):
+def matchPattern(line: str, regex_string: str):
+    """
+    Returns true if line matches pattern (regex)
+    line: string to check
+    regex_string: string, formatted r"pattern"
+    """
     if not isName(line):
         return False
 
-    regex = re.compile(pattern)
+    regex = re.compile(regex_string)
     if regex.fullmatch(line):
         return True
     else:
@@ -108,7 +113,7 @@ def generateOutline(src: str, dst: str, contents: str, toplevel_pattern: str | N
     """     
     data_dict = {"src": "",
                  "dst": "",
-                 "content": "",
+                 "contents": "",
                  "toplevel": None,
                  "sublevel": None,
                  "subsublevel": None}
